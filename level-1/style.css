@@ -1,0 +1,47 @@
+div {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+.flexbox {
+    display: flex;
+}
+#main {
+    max-width: 1200px;
+}
+#f1 {
+    flex-direction: column;
+}
+#f1 > div {
+    flex: 1;
+}
+#square2 {
+    flex: 3 !important; 
+}
+#f2 > div {
+    flex: 1;
+}
+#f4 {
+    flex-direction: column;
+    flex: 2;
+}
+#f8 {
+    flex-direction: column;
+    flex: 1;
+}
+#f5 > div {
+    flex: 1;
+}
+#f6 > div {
+    flex: 1;
+}
+@media only screen and (max-width: 768px) {
+    #f3 {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .flexbox {
+        display: block;
+    }
+}
