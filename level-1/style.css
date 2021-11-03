@@ -1,47 +1,76 @@
-div {
+#main {
+    max-width: 1200px;
+}
+#f1 > div {
     border-style: solid;
     border-width: 2px;
     border-color: black;
 }
-.flexbox {
-    display: flex;
+#f2 {
+    background-color:rgb(45, 64, 89);
+    color: orangered;
 }
-#main {
-    max-width: 1200px;
+#square4 {
+    background-color:coral;
+    color:gold;
 }
-#f1 {
-    flex-direction: column;
-}
-#f1 > div {
-    flex: 1;
-}
-#square2 {
-    flex: 3 !important; 
-}
-#f2 > div {
-    flex: 1;
+#f3 > .flexbox {
+    border-style: solid;
+    border-width: 4px;
+    border-color: yellow;
 }
 #f4 {
-    flex-direction: column;
-    flex: 2;
+    background-color:rgb(9, 80, 111);
+    color: rgb(98, 149, 156);
 }
 #f8 {
-    flex-direction: column;
-    flex: 1;
+    background-color: rgb(253, 123, 84);
+    color: rgb(253, 179, 107);
 }
-#f5 > div {
-    flex: 1;
+footer {
+    border: solid 2px black;
+    background-color: rgb(253, 199, 100);
 }
-#f6 > div {
-    flex: 1;
+@media only screen and (min-width: 600px) {
+    .flexbox {
+        display: flex;
+    }
+    #main {
+        max-width: 1200px;
+    }
+    #f1 {
+        flex-direction: column;
+    }
+    #f1 > div {
+        flex: 1;
+    }
+    #square2 {
+        flex: 3 !important; 
+    }
+    #f2 > div {
+        flex: 1;
+    }
+    #f4 {
+        flex-direction: column;
+        flex: 2;
+    }
+    #f8 {
+        flex-direction: column;
+        flex: 1;
+    }
+    #f5 > div {
+        flex: 1;
+    }
+    #f6 > div {
+        flex: 1;
+    }
+    #f8 {
+        background-color: rgb(247, 63, 82);
+        color: rgb(254, 234, 133);
+    }
 }
 @media only screen and (max-width: 768px) {
     #f3 {
         flex-direction: column;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .flexbox {
-        display: block;
     }
 }
